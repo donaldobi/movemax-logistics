@@ -4,7 +4,6 @@
     <title>@yield('title', 'Movemax | Freight, Moving and Local Logistics Services, Lagos - Nigeria')</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="author" content="ThemeZaa">
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <meta name="description" content="Delivering Excellence, Every Time.">
     <!-- favicon icon -->
@@ -44,9 +43,9 @@
             <div class="container-fluid"> 
                 <div class="col-auto">
                     <a class="navbar-brand" href="/">
-                        <img src="images/movemax-blackk.png" data-at2x="images/movemax-blackk@2x.png" alt="" class="default-logo">
-                        <img src="images/movemax-blackk.png" data-at2x="images/movemax-blackk@2x.png" alt="" class="alt-logo">
-                        <img src="images/movemax-blackk.png" data-at2x="images/movemax-blackk@2x.png" alt="" class="mobile-logo">
+                    <img src="{{ asset('images/movemax-blackk.png') }}" data-at2x="{{ asset('images/movemax-blackk@2x.png') }}" alt="" class="default-logo">
+                    <img src="{{ asset('images/movemax-blackk.png') }}" data-at2x="{{ asset('images/movemax-blackk@2x.png') }}" alt="" class="alt-logo">
+                    <img src="{{ asset('images/movemax-blackk.png') }}" data-at2x="{{ asset('images/movemax-blackk@2x.png') }}" alt="" class="mobile-logo">
                     </a>
                 </div>
                 <div class="col-auto menu-order left-nav">
@@ -69,7 +68,7 @@
                                     <li><a href="#services"><i class="line-icon-Car align-middle text-base-color"></i>Local Moving</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item"><a href="#contact" class="nav-link">Contact us</a></li>
+                            <li class="nav-item"><a href="/contact" class="nav-link">Contact us</a></li>
                         </ul>
                     </div>
                 </div>
@@ -119,7 +118,7 @@
                         <li><a href="#about">About Us</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#why-us">Why Choose Us</a></li>
-                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="/contact">Contact Us</a></li>
                     </ul>
                 </div>
                 <!-- end footer column -->
