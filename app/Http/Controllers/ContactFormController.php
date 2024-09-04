@@ -9,12 +9,12 @@ use Illuminate\Support\Facades\Mail;
 
 class ContactFormController extends Controller
 {
-    // Show the contact form.
     public function show()
     {
-        return view('contact');
+        $latestMessage = ContactForm::latest()->first();
+        return view('contact', compact('latestMessage'));
     }
-    
+
     public function store(Request $request)
     {
         $validated = $request->validate([
@@ -25,12 +25,12 @@ class ContactFormController extends Controller
             'message' => 'required|string',
         ]);
 
-        // Create a new ContactForm instance and save it to the database
         $contact = ContactForm::create($validated);
 
-        // Send email
         Mail::to('admin@movemax.com')->send(new ContactFormSubmitted($contact));
 
-        return back()->with('success', 'Your message has been sent successfully. We will get back to you soon!');
+        return redirect()->route('contact')
+            ->with('success', 'Your message has been sent successfully. We will get back to you soon!')
+            ->withFragment('contact-form');
     }
 }

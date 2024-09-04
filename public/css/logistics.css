@@ -153,3 +153,7 @@ footer p {
         padding-bottom: 15px;
     }
 }
+
+#costs-value #deliveryCost input::placeholder {
+    color: white !important;
+}

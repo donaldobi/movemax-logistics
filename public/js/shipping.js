@@ -106,7 +106,7 @@ function calculateShippingCost(pickupCity, deliveryCity, weight) {
 }
 
 // Event listener for form inputs
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function() {
     const pickupCitySelect = document.getElementById('pickupCity');
     const deliveryCitySelect = document.getElementById('deliveryCity');
     const weightInput = document.getElementById('weight');
@@ -130,13 +130,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
     
-    pickupCitySelect.addEventListener('change', updateCost);
-    deliveryCitySelect.addEventListener('change', updateCost);
-    weightInput.addEventListener('input', updateCost);
-
-    form.addEventListener('submit', function(e) {
-        e.preventDefault();
-        // Here you can add code to handle the form submission
-        console.log('Form submitted');
-    });
+    if (pickupCitySelect && deliveryCitySelect && weightInput) {
+        pickupCitySelect.addEventListener('change', updateCost);
+        deliveryCitySelect.addEventListener('change', updateCost);
+        weightInput.addEventListener('input', updateCost);
+    }
 });
