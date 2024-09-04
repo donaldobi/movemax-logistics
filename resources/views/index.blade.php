@@ -88,7 +88,7 @@
         </section>
         <!-- end section -->
         <!-- start section --> 
-        <section id="about" class="position-relative">
+        <section id="about-us" class="position-relative">
             <div class="container">
                 <img src="images/demo-logistics-home-bg-01.jpg" class="position-absolute bottom-10px right-0px z-index-minus-1" data-bottom-top="transform: translateY(150px)" data-top-bottom="transform: translateY(-150px)" alt=""/>
                 <div class="row align-items-center justify-content-center">
@@ -194,7 +194,7 @@
         </section>
         <!-- end section -->
         <!-- start section -->
-        <section id="services" class="overflow-hidden bg-very-light-gray">
+        <section id="our-services" class="overflow-hidden bg-very-light-gray">
             <div class="container">
                 <div class="row justify-content-center mb-3 xs-mb-2">
                     <div class="col-lg-7 text-center" data-anime='{ "el": "childs", "opacity": [0, 1], "translateY": [0, 0], "staggervalue": 200, "easing": "easeInOutSine" }'>
@@ -668,7 +668,7 @@
                     <div class="col-xl-8 col-lg-9 col-md-11 icon-with-text-style-08 md-mb-20px">
                         <div class="feature-box feature-box-left-icon-middle overflow-hidden">
                             <div class="feature-box-icon feature-box-icon-rounded w-90px h-90px lg-w-75px lg-h-75px sm-w-65px sm-h-65px rounded-circle bg-white me-20px">
-                                <img src="images/demo-logistics-home-icon-04.png" class="w-50px h-50px lg-w-35px lg-h-35px" alt=""> 
+                                <a href="/contact"><img src="images/demo-logistics-home-icon-04.png" class="w-50px h-50px lg-w-35px lg-h-35px" alt=""></a>
                             </div>
                             <div class="feature-box-content last-paragraph-no-margin">
                                 <h3 class="d-inline-block fw-700 text-dark-gray mb-5px ls-minus-1px">Speak with our experts today.</h3>
@@ -677,7 +677,7 @@
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-3 text-center text-lg-end">
-                        <img src="images/demo-logistics-home-10.jpg" alt="">
+                    <a href="/contact" class="d-block"><img src="images/demo-logistics-home-10.jpg" alt=""> </a>
                     </div>
                 </div>
             </div>

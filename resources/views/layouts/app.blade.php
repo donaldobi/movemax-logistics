@@ -57,15 +57,23 @@
                     </button>
                     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                         <ul class="navbar-nav">
-                            <li class="nav-item"><a href="/" class="nav-link">Home</a></li> 
-                            <li class="nav-item"><a href="#about" class="nav-link">About us</a></li>
-                            <li class="nav-item dropdown dropdown-with-icon-style02"><a href="#services" class="nav-link">Our services</a>
+                            <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+                            <li class="nav-item"><a href="{{ route('about-us') }}" class="nav-link section-link">About us</a></li>
+                            <!-- <li class="nav-item"><a href="#about-us" class="nav-link">About us</a></li> -->
+                            <li class="nav-item dropdown dropdown-with-icon-style02"><a href="#our-services" class="nav-link">Our services</a>
+                            <!-- <li class="nav-item dropdown dropdown-with-icon-style02"><a href="{{ route('our-services') }}" class="nav-link section-link">Our services</a> -->
                                 <i class="fa-solid fa-angle-down dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                                <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"> 
+                                    <li><a href="{{ route('our-services') }}" class="section-link" ><i class="line-icon-Road-3 align-middle text-base-color"></i>Road freight</a></li>
+                                    <li><a href="{{ route('our-services') }}" class="section-link" ><i class="line-icon-Plane-2 align-middle text-base-color"></i>Air freight</a></li>
+                                    <li><a href="{{ route('our-services') }}" class="section-link" ><i class="line-icon-Home align-middle text-base-color"></i>Warehousing</a></li>
+                                    <li><a href="{{ route('our-services') }}" class="section-link" ><i class="line-icon-Car align-middle text-base-color"></i>Local Moving</a></li>
+                                </ul> -->
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"> 
-                                    <li><a href="#services"><i class="line-icon-Road-3 align-middle text-base-color"></i>Road freight</a></li>
-                                    <li><a href="#services"><i class="line-icon-Plane-2 align-middle text-base-color"></i>Air freight</a></li>
-                                    <li><a href="#services"><i class="line-icon-Home align-middle text-base-color"></i>Warehousing</a></li>
-                                    <li><a href="#services"><i class="line-icon-Car align-middle text-base-color"></i>Local Moving</a></li>
+                                    <li><a href="#our-services"><i class="line-icon-Road-3 align-middle text-base-color"></i>Road freight</a></li>
+                                    <li><a href="#our-services"><i class="line-icon-Plane-2 align-middle text-base-color"></i>Air freight</a></li>
+                                    <li><a href="#our-services"><i class="line-icon-Home align-middle text-base-color"></i>Warehousing</a></li>
+                                    <li><a href="#our-services"><i class="line-icon-Car align-middle text-base-color"></i>Local Moving</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item"><a href="/contact" class="nav-link">Contact us</a></li>
@@ -115,9 +123,12 @@
                 <div class="col-lg-2 col-md-3 col-sm-5 offset-xl-1 offset-md-0 offset-sm-1 md-mb-30px">
                     <span class="fs-18 d-block text-white fw-500 mb-10px">Navigation</span>
                     <ul>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#why-us">Why Choose Us</a></li>
+                        <li><a href="{{ route('about-us') }}" class="section-link">About Us</a></li>
+                        <li><a href="{{ route('our-services') }}" class="section-link">Services</a></li>
+                        <li><a href="{{ route('why-us') }}" class="section-link">Why Choose Us</a></li>
+                        <!-- <li><a href="#about-us">About Us</a></li>
+                        <li><a href="#our-services">Services</a></li>
+                        <li><a href="#why-us">Why Choose Us</a></li> -->
                         <li><a href="/contact">Contact Us</a></li>
                     </ul>
                 </div>
@@ -164,6 +175,8 @@
     <script type="text/javascript" src="{{ asset('js/vendors.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/main.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/shipping.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/smooth-scroll.js') }}" defer></script>
     @stack('scripts')
+
 </body>
 </html>
