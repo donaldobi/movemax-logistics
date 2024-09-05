@@ -3,15 +3,16 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ShippingEstimateController;
 use App\Http\Controllers\ContactFormController;
+use App\Http\Controllers\Auth\LoginController;
 
 // Static pages
 Route::get('/', function () {
     return view('index');
 })->name('index');
 
-// Route::get('/contact', function () {
-//     return view('contact');
-// })->name('contact');
+Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
+Route::post('/login', [LoginController::class, 'login']);
+Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 
 Route::get('/contact', [ContactFormController::class, 'show'])->name('contact');
 
@@ -31,3 +32,8 @@ Route::get('/why-us', function () {
 // Form submissions
 Route::post('/shipping-estimate', [ShippingEstimateController::class, 'store'])->name('shipping.estimate');
 Route::post('/contact', [ContactFormController::class, 'store'])->name('contact.form');
+
+// Admin routes
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'admin'])->name('dashboard');
