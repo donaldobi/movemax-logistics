@@ -34,6 +34,7 @@
                         <span class="d-xl-inline-block d-none fs-15"><i class="feather icon-feather-mail text-base-color me-10px"></i><a href="mailto:info@movemax.com.ng" class="widget text-light-gray text-white-hover"><span class="__cf_email__"> info@movemax.com.ng </span></a></span>
                     </div>
                     <div class="col-md-5 text-end d-none d-lg-flex fs-15">
+                    <i class="line-icon-User text-base-color me-10px"></i><a href="/login">Staff Login</a>
                     </div>
                 </div>
             </div>

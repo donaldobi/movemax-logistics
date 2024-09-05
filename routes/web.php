@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ShippingEstimateController;
 use App\Http\Controllers\ContactFormController;
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\DashboardController;
 
 // Static pages
 Route::get('/', function () {
@@ -34,6 +35,7 @@ Route::post('/shipping-estimate', [ShippingEstimateController::class, 'store'])-
 Route::post('/contact', [ContactFormController::class, 'store'])->name('contact.form');
 
 // Admin routes
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'admin'])->name('dashboard');
+Route::middleware(['auth', 'admin'])->group(function () {
+    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+    Route::delete('/shipping-estimate/{id}', [DashboardController::class, 'destroy'])->name('shipping.estimate.destroy');
+});

@@ -4,17 +4,17 @@
 
 @section('content')
 <section class="h-450px sm-h-400px top-space-margin page-title-big-typography cover-background pt-0 pb-0"
-    style="background-image: url(images/movemax-slider-03.jpg)">
+    style="background-image: url(images/testimonials-section-01.jpg)">
 </section>
 
 <section>
     <div class="container overlap-section overlap-section-three-fourth">
         <div class="row justify-content-center">
-            <div class="col-xl-6">
+            <div class="col-xl-8">
                 <div class="bg-very-light-gray p-8 border-radius-10px">
                     <div class="row">
                         <div class="col-12 text-center mb-6">
-                            <h2 class="text-dark-gray mb-0 fw-700 ls-minus-1px">Login</h2>
+                            <h2 class="text-dark-gray mb-0 fw-700 ls-minus-1px">Staff Login</h2>
                         </div>
                     </div>
                     @if(session('error'))
