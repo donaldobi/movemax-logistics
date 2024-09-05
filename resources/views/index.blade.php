@@ -10,7 +10,7 @@
         <div class="swiper-wrapper">
             <!-- start slider item -->
             <div class="swiper-slide cover-background"
-                style="background-image:url('images/demo-logistics-slider-01.jpg');">
+                style="background-image:url('images/movemax-slider-01.jpg');">
                 <div class="container h-100">
                     <div class="row align-items-center h-100 xl-ps-10 sm-ps-0">
                         <div class="col-xxl-7 col-xl-10 text-white">
@@ -30,7 +30,7 @@
             <!-- end slider item -->
             <!-- start slider item -->
             <div class="swiper-slide cover-background"
-                style="background-image:url('images/demo-logistics-slider-02.jpg');">
+                style="background-image:url('images/movemax-slider-02.jpg');">
                 <div class="container h-100">
                     <div class="row align-items-center h-100 xl-ps-10 sm-ps-0">
                         <div class="col-xxl-7 col-xl-10 text-white">
@@ -49,7 +49,7 @@
             <!-- end slider item -->
             <!-- start slider item -->
             <div class="swiper-slide cover-background"
-                style="background-image:url('images/movemax-slider-03.jpg.jpg');">
+                style="background-image:url('images/movemax-slider-033.jpg');">
                 <div class="container h-100">
                     <div class="row align-items-center h-100 xl-ps-10 sm-ps-0">
                         <div class="col-xxl-7 col-xl-10 text-white">
@@ -334,7 +334,7 @@
                                     <div
                                         class="col-sm-6 services-box bg-white p-10 xxl-p-8 xl-p-6 box-shadow-extra-large">
                                         <div class="services-box-icon">
-                                            <i class="line-icon-Box2 icon-double-large text-base-color mb-25px"></i>
+                                            <i class="line-icon-Box-Open icon-double-large text-base-color mb-25px"></i>
                                         </div>
                                         <div class="services-box-content">
                                             <a href="#contact"
@@ -484,7 +484,7 @@
                 <div class="w-60 overflow-hidden position-absolute left-15px bottom-20px" data-shadow-animation="true"
                     data-animation-delay="500" data-bottom-top="transform: translateY(-20px)"
                     data-top-bottom="transform: translateY(50px)">
-                    <img src="images/movemax-man.jpg" alt=""
+                    <img src="images/movemax-man-1.jpg" alt=""
                         class="border-radius-10px box-shadow-quadruple-large" />
                 </div>
             </div>
@@ -529,7 +529,7 @@
 <!-- end section -->
 <!-- start section -->
 <section id="testimonials" class="cover-background"
-    style="background-image: url('images/demo-logistics-home-bg-02.jpg')">
+    style="background-image: url('images/testimonials-section-02.jpg')">
     <div class="opacity-extra-medium bg-dark-gray d-xl-none d-block"></div>
     <div class="container position-relative z-index-1">
         <div class="row">
@@ -675,9 +675,11 @@
                         <div class="position-relative form-group mb-20px">
                             <span class="form-icon"><i class="bi bi-person"></i></span>
                             <input class="input-name box-shadow-double-large form-control required" type="text"
-                                name="name" placeholder="Your name" value="{{ old('name') }}" />
+                                name="name" placeholder="Your name" value="{{ old('name') }}" required />
+                        </div>
+                        <div>
                             @error('name')
-                            <span class="text-danger fw-bold p-2">{{ $message }}</span>
+                                <span class="text-danger fw-bold p-2">{{ $message }}</span>
                             @enderror
                         </div>
                     </div>
@@ -685,9 +687,11 @@
                         <div class="position-relative form-group mb-20px">
                             <span class="form-icon"><i class="bi bi-telephone-outbound"></i></span>
                             <input class="input-name box-shadow-double-large form-control required" type="text"
-                                name="mobile" placeholder="Your mobile" value="{{ old('mobile') }}" />
+                                name="mobile" placeholder="Your mobile" value="{{ old('mobile') }}" required />
+                        </div>
+                        <div>
                             @error('mobile')
-                            <span class="text-danger fw-bold p-2">{{ $message }}</span>
+                                <span class="text-danger fw-bold p-2">{{ $message }}</span>
                             @enderror
                         </div>
                     </div>
@@ -696,10 +700,12 @@
                     <div class="col-md-6 mb-30px">
                         <div class="position-relative form-group mb-20px">
                             <span class="form-icon"><i class="bi bi-envelope"></i></span>
-                            <input class="box-shadow-double-large form-control required" type="email" name="email"
-                                placeholder="Your email" value="{{ old('email') }}" />
+                            <input class="box-shadow-double-large form-control" type="email" name="email"
+                                placeholder="Your email" value="{{ old('email') }}"/>
+                        </div>
+                        <div>
                             @error('email')
-                            <span class="text-danger fw-bold p-2">{{ $message }}</span>
+                                <span class="text-danger fw-bold p-2">{{ $message }}</span>
                             @enderror
                         </div>
                     </div>
@@ -708,9 +714,11 @@
                             <span class="form-icon"><i class="bi bi-speedometer2"></i></span>
                             <input id="weight" class="box-shadow-double-large form-control required" type="number"
                                 name="item_weight" min="1" max="1000" placeholder="Item Weight in kg"
-                                value="{{ old('item_weight') }}" />
+                                value="{{ old('item_weight') }}" required />
+                        </div>
+                        <div>
                             @error('item_weight')
-                            <span class="text-danger fw-bold p-2">{{ $message }}</span>
+                                <span class="text-danger fw-bold p-2">{{ $message }}</span>
                             @enderror
                         </div>
                     </div>
@@ -720,7 +728,7 @@
                         <div class="position-relative form-group select mb-20px">
                             <span class="form-icon"><i class="bi bi-flag"></i></span>
                             <select id="pickupCity" class="form-control box-shadow-double-large" name="pickup_location"
-                                aria-label="select-city-pickup">
+                                aria-label="select-city-pickup" required>
                                 <option value="">Pickup Location (City)</option>
                                 <option value="Lagos">Lagos</option>
                                 <option value="Abuja">Abuja</option>
@@ -730,8 +738,10 @@
                                 <option value="Ibadan">Ibadan</option>
                                 <option value="Benin City">Benin City</option>
                             </select>
+                        </div>
+                        <div>
                             @error('pickup_location')
-                            <span class="text-danger fw-bold p-2">{{ $message }}</span>
+                                <span class="text-danger fw-bold p-2">{{ $message }}</span>
                             @enderror
                         </div>
                     </div>
@@ -739,7 +749,7 @@
                         <div class="position-relative form-group select mb-20px">
                             <span class="form-icon"><i class="bi bi-flag"></i></span>
                             <select id="deliveryCity" class="form-control box-shadow-double-large"
-                                name="delivery_location" aria-label="select-city-delivery">
+                                name="delivery_location" aria-label="select-city-delivery" required>
                                 <option value="">Delivery Location</option>
                                 <option value="Lagos">Lagos</option>
                                 <option value="Abuja">Abuja</option>
@@ -749,8 +759,10 @@
                                 <option value="Ibadan">Ibadan</option>
                                 <option value="Benin City">Benin City</option>
                             </select>
+                        </div>
+                        <div>
                             @error('delivery_location')
-                            <span class="text-danger fw-bold p-2">{{ $message }}</span>
+                                <span class="text-danger fw-bold p-2">{{ $message }}</span>
                             @enderror
                         </div>
                     </div>
@@ -761,9 +773,11 @@
                             <span class="form-icon"><i class="bi bi-globe2"></i></span>
                             <textarea class="box-shadow-double-large form-control" cols="40" rows="3"
                                 name="pickup_address"
-                                placeholder="Pickup address">{{ old('pickup_address') }}</textarea>
+                                placeholder="Pickup address" required>{{ old('pickup_address') }}</textarea>
+                        </div>
+                        <div>
                             @error('pickup_address')
-                            <span class="text-danger fw-bold p-2">{{ $message }}</span>
+                                <span class="text-danger fw-bold p-2">{{ $message }}</span>
                             @enderror
                         </div>
                     </div>
@@ -772,9 +786,11 @@
                             <span class="form-icon"><i class="bi bi-globe"></i></span>
                             <textarea class="box-shadow-double-large form-control" cols="40" rows="3"
                                 name="delivery_address"
-                                placeholder="Delivery address">{{ old('delivery_address') }}</textarea>
+                                placeholder="Delivery address" required>{{ old('delivery_address') }}</textarea>
+                        </div>
+                        <div>
                             @error('delivery_address')
-                            <span class="text-danger fw-bold p-2">{{ $message }}</span>
+                                <span class="text-danger fw-bold p-2">{{ $message }}</span>
                             @enderror
                         </div>
                     </div>
@@ -784,7 +800,7 @@
                         <div class="position-relative form-group form-textarea">
                             <span class="form-icon"><i class="bi bi-chat-square-dots"></i></span>
                             <textarea class="form-control" cols="40" rows="3" name="item_description"
-                                placeholder="Describe Item(s) | Notes">{{ old('item_description') }}</textarea>
+                                placeholder="Describe Item(s) | Notes" required>{{ old('item_description') }}</textarea>
                         </div>
                         <div class="p-2">
                             @error('item_description')

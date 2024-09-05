@@ -72,7 +72,7 @@
                             <div class="col-lg-6 col-sm-6 bg-white box-shadow-extra-large p-30px">
                                 <div class="services-box-content last-paragraph-no-margin">
                                     <span class="d-block text-dark-gray fw-700 fs-19 mb-10px">Abuja</span>
-                                    <p class="lh-22 mb-25px">Plot 741 Aminu Kano Cres, Wuse, Abuj, Federal Capital
+                                    <p class="lh-22 mb-25px">Plot 741 Aminu Kano Crescent, Wuse, Abuja, Federal Capital
                                         Territory,</p>
                                     <p class="fs-17 lh-22 fw-500 text-dark-gray d-inline-block mb-25px">Warehouse &amp;
                                         Support</p>
@@ -91,7 +91,7 @@
 </section>
 <!-- end section -->
 <!-- start section -->
-<section id="contact-form"
+<section id="contact"
     class="h-450px sm-h-400px top-space-margin page-title-big-typography cover-background pt-0 pb-0"
     style="background-image: url(images/movemax-slider-03.jpg)">
 </section>
@@ -158,8 +158,10 @@
                                 <span class="form-icon"><i class="bi bi-telephone-outbound"></i></span>
                                 <input class="form-control" type="tel" name="phone" placeholder="Your phone"
                                     value="{{ old('phone') }}" />
+                            </div>
+                            <div>
                                 @error('phone')
-                                <span class="text-danger">{{ $message }}</span>
+                                <span class="text-danger fw-bold p-2">{{ $message }}</span>
                                 @enderror
                             </div>
                         </div>
@@ -168,8 +170,10 @@
                                 <span class="form-icon"><i class="bi bi-envelope"></i></span>
                                 <input class="form-control required" type="email" name="email"
                                     placeholder="Your email address*" value="{{ old('email') }}" required />
+                            </div>
+                            <div>
                                 @error('email')
-                                <span class="text-danger">{{ $message }}</span>
+                                <span class="text-danger fw-bold p-2">{{ $message }}</span>
                                 @enderror
                             </div>
                         </div>
@@ -182,14 +186,21 @@
                                 <span class="text-danger">{{ $message }}</span>
                                 @enderror
                             </div>
+                            <div>
+                                @error('subject')
+                                <span class="text-danger fw-bold p-2">{{ $message }}</span>
+                                @enderror
+                            </div>
                         </div>
                         <div class="col-md-12 mb-30px">
                             <div class="position-relative form-group form-textarea">
                                 <span class="form-icon"><i class="bi bi-chat-square-dots"></i></span>
                                 <textarea class="form-control" cols="40" rows="4" name="message"
                                     placeholder="Your message" required>{{ old('message') }}</textarea>
+                            </div>
+                            <div>
                                 @error('message')
-                                <span class="text-danger">{{ $message }}</span>
+                                <span class="text-danger fw-bold p-2">{{ $message }}</span>
                                 @enderror
                             </div>
                         </div>
