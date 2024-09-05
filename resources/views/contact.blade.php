@@ -30,7 +30,7 @@
                     <h2 class="text-dark-gray mb-20px fw-700 ls-minus-1px">Locations Across Nigeria.</h2>
                     <p class="mb-35px w-90 lg-w-100 sm-mb-25px">We are always ready to assist with your logistics needs.
                         Reach out to experience seamless, reliable logistics services.</p>
-                    <a href="#contact-form"
+                    <a href="#contact"
                         class="btn btn-large btn-switch-text btn-dark-gray left-icon btn-box-shadow btn-round-edge">
                         <span>
                             <span><i class="bi bi-telephone-outbound"></i></span>
@@ -47,7 +47,7 @@
                         <div class="row g-0 box-shadow-quadruple-large border-radius-6px overflow-hidden">
                             <div class="col-lg-6 col-sm-6">
                                 <div class="h-100 cover-background xs-h-300px"
-                                    style="background-image: url(images/demo-yoga-and-meditation-contact-01.jpg)"></div>
+                                    style="background-image: url(images/lagos.jpg)"></div>
                             </div>
                             <div class="col-lg-6 col-sm-6 bg-white box-shadow-extra-large p-30px">
                                 <div class="services-box-content last-paragraph-no-margin">
@@ -67,7 +67,7 @@
                         <div class="row g-0 box-shadow-quadruple-large border-radius-6px overflow-hidden">
                             <div class="col-lg-6 col-sm-6">
                                 <div class="h-100 cover-background xs-h-300px"
-                                    style="background-image: url(images/demo-yoga-and-meditation-contact-02.jpg)"></div>
+                                    style="background-image: url(images/abuja.jpg)"></div>
                             </div>
                             <div class="col-lg-6 col-sm-6 bg-white box-shadow-extra-large p-30px">
                                 <div class="services-box-content last-paragraph-no-margin">
@@ -93,7 +93,7 @@
 <!-- start section -->
 <section id="contact-form"
     class="h-450px sm-h-400px top-space-margin page-title-big-typography cover-background pt-0 pb-0"
-    style="background-image: url(images/demo-logistics-contact-title-bg.jpg)">
+    style="background-image: url(images/movemax-slider-03.jpg)">
 </section>
 
 <!-- end section -->
@@ -114,8 +114,9 @@
                     </div>
                     <!-- start contact form -->
                     @if(session('success'))
-                    <div class="alert alert-success">
-                        {{ session('success') }}
+                    <div class="alert alert-success alert-dismissible fade show" role="alert fw-bold">
+                        <p class="fw-bold">{{ session('success') }}</p>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                     </div>
                     @endif
 
@@ -129,7 +130,7 @@
                     </div>
                     @endif
 
-                    @if($latestMessage)
+                    <!-- @if($latestMessage)
                         <div class="alert alert-info">
                             <h4>Latest Submitted Message:</h4>
                             <p><strong>Name:</strong> {{ $latestMessage->name }}</p>
@@ -138,7 +139,7 @@
                             <p><strong>Subject:</strong> {{ $latestMessage->subject }}</p>
                             <p><strong>Message:</strong> {{ $latestMessage->message }}</p>
                         </div>
-                    @endif
+                    @endif -->
 
                     <form method="POST" action="{{ route('contact.form') }}" class="row contact-form-style-01 laravel-form">
                         @csrf

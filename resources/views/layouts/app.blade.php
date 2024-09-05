@@ -72,8 +72,8 @@
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"> 
                                     <li><a href="#our-services"><i class="line-icon-Road-3 align-middle text-base-color"></i>Road freight</a></li>
                                     <li><a href="#our-services"><i class="line-icon-Plane-2 align-middle text-base-color"></i>Air freight</a></li>
-                                    <li><a href="#our-services"><i class="line-icon-Home align-middle text-base-color"></i>Warehousing</a></li>
-                                    <li><a href="#our-services"><i class="line-icon-Car align-middle text-base-color"></i>Local Moving</a></li>
+                                    <li><a href="#our-services"><i class="line-icon-Scooter align-middle text-base-color"></i>Last Mile Delivery</a></li>
+                                    <li><a href="#our-services"><i class="line-icon-Truck align-middle text-base-color"></i>Local Moving</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item"><a href="/contact" class="nav-link">Contact us</a></li>
@@ -156,7 +156,7 @@
                 <div class="col-12">
                     <div class="divider-style-03 divider-style-03-01 border-color-transparent-white-light"></div>
                 </div>
-                <div class="col-lg-9 pt-25px pb-25px fs-15 last-paragraph-no-margin text-center order-2 order-sm-1"><p>2022 All rights reserved | Movemax Logistics Nigeria Limited.  | Design &amp; Development by <a href="https://ascend.com.ng" class="text-decoration-line-bottom"> Ascend</a></p></div>
+                <div class="col-lg-9 pt-25px pb-25px fs-15 last-paragraph-no-margin text-center order-2 order-sm-1"><p>2023 All rights reserved | Movemax Logistics Nigeria Limited.  | Design &amp; Development by <a href="https://donaldobi.com" class="text-decoration-line-bottom"> Donald O.</a></p></div>
             </div>
         </div>
     </footer>

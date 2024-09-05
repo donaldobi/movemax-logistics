@@ -11,6 +11,7 @@ class ShippingEstimateController extends Controller
 {
     public function store(Request $request)
     {
+        // dd($request->all());
         $validated = $request->validate([
             'name' => 'required|string|max:255',
             'email' => 'required|email|max:255',
@@ -29,6 +30,8 @@ class ShippingEstimateController extends Controller
         // Send email
         Mail::to('admin@movemax.com')->send(new ShippingEstimateSubmitted($estimate));
 
-        return back()->with('success', 'Your shipping estimate has been submitted.');
+        return redirect()->route('index')
+        ->with('success', 'Your estimate requuest has been received. We will contact you shortly with the final cost.')
+        ->withFragment('contact');
     }
 }

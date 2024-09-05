@@ -67,10 +67,10 @@ const stateDistances = {
 
 
 // Base rate per km (in Naira)
-const BASE_RATE_PER_KM = 50;
+const BASE_RATE_PER_KM = 60;
 
 // Minimum charge for same-city delivery
-const SAME_CITY_MINIMUM = 2000;
+const SAME_CITY_MINIMUM = 3500;
 
 // Weight categories and their multipliers
 const weightMultipliers = [
@@ -134,5 +134,21 @@ document.addEventListener('DOMContentLoaded', function() {
         pickupCitySelect.addEventListener('change', updateCost);
         deliveryCitySelect.addEventListener('change', updateCost);
         weightInput.addEventListener('input', updateCost);
+    }
+});
+
+// Add this at the end of your existing code
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('shippingForm');
+    const costInput = document.getElementById('deliveryCost');
+
+    if (form) {
+        form.addEventListener('submit', function(e) {
+            // Enable the delivery_cost input so it's included in the form submission
+            costInput.disabled = false;
+            
+            // Remove the '₦' symbol and commas from the cost value
+            costInput.value = costInput.value.replace('₦', '').replace(/,/g, '');
+        });
     }
 });

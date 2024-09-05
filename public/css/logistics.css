@@ -157,3 +157,7 @@ footer p {
 #costs-value #deliveryCost input::placeholder {
     color: white !important;
 }
+
+.swiper-pagination-bullet-active {
+    background: #ffc107;
+}

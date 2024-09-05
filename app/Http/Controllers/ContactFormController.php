@@ -31,6 +31,6 @@ class ContactFormController extends Controller
 
         return redirect()->route('contact')
             ->with('success', 'Your message has been sent successfully. We will get back to you soon!')
-            ->withFragment('contact-form');
+            ->withFragment('contact');
     }
 }

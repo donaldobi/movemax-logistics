@@ -49,7 +49,7 @@
             <!-- end slider item -->
             <!-- start slider item -->
             <div class="swiper-slide cover-background"
-                style="background-image:url('images/demo-logistics-slider-03.jpg');">
+                style="background-image:url('images/movemax-slider-03.jpg.jpg');">
                 <div class="container h-100">
                     <div class="row align-items-center h-100 xl-ps-10 sm-ps-0">
                         <div class="col-xxl-7 col-xl-10 text-white">
@@ -258,7 +258,7 @@
                                     <div
                                         class="col-sm-6 services-box bg-white p-10 xxl-p-8 xl-p-6 box-shadow-extra-large">
                                         <div class="services-box-icon">
-                                            <i class="line-icon-Plane-2 icon-double-large text-base-color mb-25px"></i>
+                                            <i class="line-icon-Truck icon-double-large text-base-color mb-25px"></i>
                                         </div>
                                         <div class="services-box-content">
                                             <a href="#contact"
@@ -273,7 +273,7 @@
                                     </div>
                                     <div class="col-sm-6 services-box-img xs-h-300px">
                                         <div class="h-100 cover-background"
-                                            style="background-image: url(images/demo-logistics-home-02.jpg)"></div>
+                                            style="background-image: url(images/road.jpg)"></div>
                                     </div>
                                 </div>
                             </div>
@@ -284,12 +284,11 @@
                                     <div
                                         class="col-sm-6 services-box bg-white p-10 xxl-p-8 xl-p-6 box-shadow-extra-large">
                                         <div class="services-box-icon">
-                                            <i class="line-icon-Ship-2 icon-double-large text-base-color mb-25px"></i>
+                                            <i class="line-icon-Plane-2 icon-double-large text-base-color mb-25px"></i>
                                         </div>
                                         <div class="services-box-content">
                                             <a href="#contact"
-                                                class="d-inline-block text-dark-gray fs-22 fw-700 mb-5px">Air
-                                                Freight</a>
+                                                class="d-inline-block text-dark-gray fs-22 fw-700 mb-5px">Air Freight</a>
                                             <p class="mb-15px">Swift air cargo solutions for time-sensitive shipments.
                                             </p>
                                             <a href="#contact"
@@ -299,7 +298,7 @@
                                     </div>
                                     <div class="col-sm-6 services-box-img xs-h-300px">
                                         <div class="h-100 cover-background"
-                                            style="background-image: url(images/demo-logistics-home-03.jpg)"></div>
+                                            style="background-image: url(images/air.jpg)"></div>
                                     </div>
                                 </div>
                             </div>
@@ -310,7 +309,7 @@
                                     <div
                                         class="col-sm-6 services-box bg-white p-10 xxl-p-8 xl-p-6 box-shadow-extra-large">
                                         <div class="services-box-icon">
-                                            <i class="line-icon-Bus-2 icon-double-large text-base-color mb-25px"></i>
+                                            <i class="line-icon-Scooter icon-double-large text-base-color mb-25px"></i>
                                         </div>
                                         <div class="services-box-content">
                                             <a href="#contact"
@@ -324,7 +323,7 @@
                                     </div>
                                     <div class="col-sm-6 services-box-img xs-h-300px">
                                         <div class="h-100 cover-background"
-                                            style="background-image: url(images/demo-logistics-home-08.jpg)"></div>
+                                            style="background-image: url(images/last-mile.jpg)"></div>
                                     </div>
                                 </div>
                             </div>
@@ -335,13 +334,12 @@
                                     <div
                                         class="col-sm-6 services-box bg-white p-10 xxl-p-8 xl-p-6 box-shadow-extra-large">
                                         <div class="services-box-icon">
-                                            <i class="line-icon-Tram icon-double-large text-base-color mb-25px"></i>
+                                            <i class="line-icon-Box2 icon-double-large text-base-color mb-25px"></i>
                                         </div>
                                         <div class="services-box-content">
                                             <a href="#contact"
-                                                class="d-inline-block text-dark-gray fs-22 fw-700 mb-5px">Local
-                                                Moving</a>
-                                            <p class="mb-15px">We make your residential or commercial move as smooth as
+                                                class="d-inline-block text-dark-gray fs-22 fw-700 mb-5px">Moving</a>
+                                            <p class="mb-15px">Make your residential or corporate move as smooth as
                                                 possible.</p>
                                             <a href="#contact"
                                                 class="btn btn-extra-large thin btn-link text-dark-gray p-0">Learn
@@ -350,7 +348,7 @@
                                     </div>
                                     <div class="col-sm-6 services-box-img xs-h-300px">
                                         <div class="h-100 cover-background"
-                                            style="background-image: url(images/demo-logistics-home-09.jpg)"></div>
+                                            style="background-image: url(images/local-moving.jpg)"></div>
                                     </div>
                                 </div>
                             </div>
@@ -481,12 +479,12 @@
             <div class="col-xl-6 col-lg-6 offset-xl-1 position-relative">
                 <div class="w-80 ms-auto" data-animation-delay="500" data-shadow-animation="true"
                     data-bottom-top="transform: translateY(50px)" data-top-bottom="transform: translateY(-50px)">
-                    <img src="images/demo-logistics-home-05.jpg" alt="" class="border-radius-10px w-100">
+                    <img src="images/movemax-cta-1.jpg" alt="" class="border-radius-10px w-100">
                 </div>
                 <div class="w-60 overflow-hidden position-absolute left-15px bottom-20px" data-shadow-animation="true"
                     data-animation-delay="500" data-bottom-top="transform: translateY(-20px)"
                     data-top-bottom="transform: translateY(50px)">
-                    <img src="images/demo-logistics-home-04.jpg" alt=""
+                    <img src="images/movemax-man.jpg" alt=""
                         class="border-radius-10px box-shadow-quadruple-large" />
                 </div>
             </div>
@@ -656,14 +654,21 @@
                 <span
                     class="fs-16 lh-22 fw-700 mb-15px d-inline-block text-uppercase text-dark-gray border-bottom border-2 border-color-base-color">Movemax
                     logistics services</span>
-                <h2 class="fw-700 text-dark-gray ls-minus-1px mb-45px">Shipping Rate Calculator!</h2>
+                <h2 class="fw-700 text-dark-gray ls-minus-1px mb-45px">Get a Shipping Estimate!</h2>
+                
+                @if(session('success'))
+                <div class="alert alert-success alert-dismissible fade show" role="alert fw-bold">
+                    <p class="fw-bold">{{ session('success') }}</p>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                @endif
+
                 <p class="fs-16 lh-24 w-80 xxl-w-100">*Rate shown is an estimate only, and may vary depending on item
                     type, handling requirements, value and other factors. We will contact you to confirm the final cost.
                 </p>
                 <!-- start shipping rate quote form -->
 
-                <form method="POST" action="{{ route('shipping.estimate') }}" id="shippingForm"
-                    class="row contact-form-style-01">
+                <form method="POST" action="{{ route('shipping.estimate') }}" id="shippingForm" class="row contact-form-style-01">
                     @csrf
                     <!-- First Row -->
                     <div class="col-md-6 mb-30px">
@@ -802,7 +807,7 @@
                     <div class="col-auto text-center text-md-end sm-mt-20px lg-mb-15px">
                         <input type="hidden" name="redirect" value="">
                         <button
-                            class="btn btn-dark-gray btn-switch-text btn-medium left-icon btn-round-edge submit btn-box-shadow"
+                            class="btn btn-base-color btn-switch-text btn-medium left-icon btn-round-edge submit btn-box-shadow"
                             type="submit">
                             <span>
                                 <span><i class="feather icon-feather-mail"></i></span>
@@ -823,13 +828,8 @@
                         <div class="form-results mt-20px d-none"></div>
                     </div>
                 </form>
-
                 <!-- end shipping rate quote form -->
-                @if(session('success'))
-                <div class="alert alert-success">
-                    {{ session('success') }}
-                </div>
-                @endif
+
             </div>
             <div class="col-lg-4 md-h-700px sm-h-500px">
                 <div class="cover-background background-position-center-top h-100"
