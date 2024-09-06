@@ -6,8 +6,6 @@
         "build": "php artisan config:cache && php artisan route:cache && php artisan view:cache"
     },
     "devDependencies": {
-        "axios": "^1.6.4",
-        "laravel-vite-plugin": "^1.0.5",
-        "vite": "^5.4.3"
+        "axios": "^1.6.4"
     }
 }
