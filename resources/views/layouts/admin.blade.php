@@ -43,6 +43,33 @@
         <span class="divider">
           <hr />
         </span>
+        <!-- Estimate Requests -->
+        <li class="nav-item nav-item-has-children">
+          <a href="/dashboard" class="collapsed" data-bs-toggle="collapse" data-bs-target="#ddmenu_3" aria-controls="ddmenu_3"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M14.9211 10.1294C15.1652 9.88534 15.1652 9.48967 14.9211 9.24559L10.7544 5.0789C10.5103 4.83482 10.1147 4.83482 9.87057 5.0789C9.62649 5.32297 9.62649 5.71871 9.87057 5.96278L12.9702 9.06251H1.97916C1.63398 9.06251 1.35416 9.34234 1.35416 9.68751C1.35416 10.0327 1.63398 10.3125 1.97916 10.3125H12.9702L9.87057 13.4123C9.62649 13.6563 9.62649 14.052 9.87057 14.2961C10.1147 14.5402 10.5103 14.5402 10.7544 14.2961L14.9211 10.1294Z" />
+                <path
+                  d="M11.6383 15.18L15.805 11.0133C16.5373 10.2811 16.5373 9.09391 15.805 8.36166L11.6383 4.195C11.2722 3.82888 10.7923 3.64582 10.3125 3.64582V3.02082C10.3125 2.10035 11.0587 1.35416 11.9792 1.35416H16.9792C17.8997 1.35416 18.6458 2.10035 18.6458 3.02082V16.3542C18.6458 17.2747 17.8997 18.0208 16.9792 18.0208H11.9792C11.0587 18.0208 10.3125 17.2747 10.3125 16.3542V15.7292C10.7923 15.7292 11.2722 15.5461 11.6383 15.18Z" />
+              </svg>
+            </span>
+            <span class="text">Estimate Requests</span>
+          </a>
+          <ul id="ddmenu_3" class="collapse dropdown-nav">
+            <li>
+              <a href="/dashboard"> View Requests </a>
+            </li>
+          </ul>
+        </li>
+        <span class="divider">
+          <hr />
+        </span>
+        <!-- End -->
+
+
+        <!-- Contacts -->
         <li class="nav-item nav-item-has-children">
           <a href="/dashboard" class="collapsed" data-bs-toggle="collapse" data-bs-target="#ddmenu_4" aria-controls="ddmenu_4"
             aria-expanded="false" aria-label="Toggle navigation">
@@ -54,15 +81,14 @@
                   d="M11.6383 15.18L15.805 11.0133C16.5373 10.2811 16.5373 9.09391 15.805 8.36166L11.6383 4.195C11.2722 3.82888 10.7923 3.64582 10.3125 3.64582V3.02082C10.3125 2.10035 11.0587 1.35416 11.9792 1.35416H16.9792C17.8997 1.35416 18.6458 2.10035 18.6458 3.02082V16.3542C18.6458 17.2747 17.8997 18.0208 16.9792 18.0208H11.9792C11.0587 18.0208 10.3125 17.2747 10.3125 16.3542V15.7292C10.7923 15.7292 11.2722 15.5461 11.6383 15.18Z" />
               </svg>
             </span>
-            <span class="text">Clients Requests</span>
+            <span class="text">Contacts</span>
           </a>
           <ul id="ddmenu_4" class="collapse dropdown-nav">
             <li>
-              <a href="/dashboard"> Estimate Requests </a>
+              <a href="/contacts"> View Contacts </a>
             </li>
           </ul>
         </li>
-        <!-- End -->
 
         <!-- Auth -->
         <span class="divider">
