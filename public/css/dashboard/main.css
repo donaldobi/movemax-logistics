@@ -5986,3 +5986,15 @@ input::file-selector-button {
 .bg-dark{
   background: rgba(155,131,56, 1);
 }
+
+
+.active>.page-link, .page-link.active {
+  z-index: 3;
+  color: var(--bs-pagination-active-color);
+  background-color: #000;
+  border-color: #000;
+}
+
+.page-link {
+  color: #000;
+}
