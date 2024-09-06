@@ -5,6 +5,7 @@ use App\Http\Controllers\ShippingEstimateController;
 use App\Http\Controllers\ContactFormController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\ClientsController;
 
 // Static pages
 Route::get('/', function () {
@@ -38,4 +39,7 @@ Route::post('/contact', [ContactFormController::class, 'store'])->name('contact.
 Route::middleware(['auth', 'admin'])->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
     Route::delete('/shipping-estimate/{id}', [DashboardController::class, 'destroy'])->name('shipping.estimate.destroy');
+    Route::get('/contacts', [ClientsController::class, 'index'])->name('contacts.index');
+    Route::delete('/contacts/{id}', [ClientsController::class, 'destroy'])->name('contacts.destroy');
+
 });

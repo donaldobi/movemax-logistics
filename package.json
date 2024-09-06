@@ -2,10 +2,12 @@
     "private": true,
     "type": "module",
     "scripts": {
-        "dev": "echo 'Development command not set'",
-        "build": "echo 'Build command not set'"
+        "dev": "php artisan serve",
+        "build": "php artisan config:cache && php artisan route:cache && php artisan view:cache"
     },
     "devDependencies": {
-        "axios": "^1.6.4"
+        "axios": "^1.6.4",
+        "laravel-vite-plugin": "^1.0.5",
+        "vite": "^5.4.3"
     }
 }

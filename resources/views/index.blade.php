@@ -177,64 +177,7 @@
 </section>
 <!-- end section -->
 <!-- start section -->
-<section class="p-0">
-    <div class="container-fluid">
-        <div class="row row-cols-1 row-cols-lg-6 row-cols-md-3 clients-style-04 border-top sm-border-top-0"
-            data-anime='{"opacity": [0,1], "duration": 400, "delay": 300, "staggervalue": 300, "easing": "easeOutQuad" }'>
-            <!-- start client item -->
-            <div
-                class="col text-center border-end border-color-transparent-dark-very-light sm-border-end-0 sm-border-top transition-inner-all pt-45px pb-45px sm-pt-30px sm-pb-30px">
-                <div class="client-box">
-                    <img src="images/demo-logistics-client-01.svg" alt="" />
-                </div>
-            </div>
-            <!-- end client item -->
-            <!-- start client item -->
-            <div
-                class="col text-center border-end border-color-transparent-dark-very-light sm-border-end-0 sm-border-top transition-inner-all pt-45px pb-45px sm-pt-30px sm-pb-30px">
-                <div class="client-box">
-                    <img src="images/demo-logistics-client-02.svg" alt="" />
-                </div>
-            </div>
-            <!-- end client item -->
-            <!-- start client item -->
-            <div
-                class="col text-center border-end border-color-transparent-dark-very-light sm-border-end-0 sm-border-top transition-inner-all pt-45px pb-45px sm-pt-30px sm-pb-30px">
-                <div class="client-box">
-                    <img src="images/demo-logistics-client-03.svg" alt="" />
-                </div>
-            </div>
-            <!-- end client item -->
-            <!-- start client item -->
-            <div
-                class="col text-center border-end border-color-transparent-dark-very-light sm-border-end-0 md-border-top transition-inner-all pt-45px pb-45px sm-pt-30px sm-pb-30px">
-                <div class="client-box">
-                    <img src="images/demo-logistics-client-04.svg" alt="" />
-                </div>
-            </div>
-            <!-- end client item -->
-            <!-- start client item -->
-            <div
-                class="col text-center border-end border-color-transparent-dark-very-light sm-border-end-0 md-border-top transition-inner-all pt-45px pb-45px sm-pt-30px sm-pb-30px">
-                <div class="client-box">
-                    <img src="images/demo-logistics-client-05.svg" alt="" />
-                </div>
-            </div>
-            <!-- end client item -->
-            <!-- start client item -->
-            <div
-                class="col text-center border-end border-color-transparent-dark-very-light sm-border-end-0 md-border-top transition-inner-all pt-45px pb-45px sm-pt-30px sm-pb-30px">
-                <div class="client-box">
-                    <img src="images/demo-logistics-client-06.svg" alt="" />
-                </div>
-            </div>
-            <!-- end client item -->
-        </div>
-    </div>
-</section>
-<!-- end section -->
-<!-- start section -->
-<section id="our-services" class="overflow-hidden bg-very-light-gray">
+<section id="our-services" class="overflow-hidden bg-very-light-gray mt-5">
     <div class="container">
         <div class="row justify-content-center mb-3 xs-mb-2">
             <div class="col-lg-7 text-center"
