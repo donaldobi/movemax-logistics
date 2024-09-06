@@ -100,12 +100,8 @@
                     </div>
                 </div>
                 <!-- Pagination -->
-                <div class="pagination-wrapper">
-                    {{ $contacts->links() }}
-                </div>
-                <!-- order pagination -->
                 <nav>
-                    {{ $orders->links('pagination::bootstrap-5') }}
+                    {{ $contacts->links('pagination::bootstrap-5') }}
                 </nav>
                 
             </div>
