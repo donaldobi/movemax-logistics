@@ -33,6 +33,6 @@ class DashboardController extends Controller
         $estimate = ShippingEstimate::findOrFail($id);
         $estimate->delete();
 
-        return redirect()->route('dashboard')->with('success', 'Shipping estimate deleted successfully.');
+        return redirect()->route('dashboard')->with('success', 'Shipping estimate request deleted successfully.');
     }
 }

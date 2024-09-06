@@ -110,7 +110,7 @@
                 </div>
                 <!-- Pagination -->
                 <nav>
-                    {{ $contacts->links('pagination::bootstrap-5') }}
+                    {{ $estimates->links('pagination::bootstrap-5') }}
                 </nav>
 
             </div>
