@@ -1,6 +1,6 @@
 # Movemax Logistics
 
-**Movemax Logistics** is a web application built with Laravel and Bootstrap, designed to provide shipping estimate services and manage customer inquiries.
+**Movemax Logistics** is a web application built with Laravel PHP, JavaScript, and Bootstrap, designed to provide shipping estimate services and manage customer inquiries.
 
 ## Description
 
